@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/golang-github-spf13-cast-$1\.tar\.gz/ \
+  https://github.com/spf13/cast/releases .*/v?(\d\S*)\.tar\.gz

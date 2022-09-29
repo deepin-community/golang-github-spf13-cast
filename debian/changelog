@@ -1,0 +1,122 @@
+golang-github-spf13-cast (1.4.1-1) unstable; urgency=medium
+
+  * New upstream version 1.4.1
+
+ -- Anthony Fok <foka@debian.org>  Sun, 31 Oct 2021 16:25:37 -0600
+
+golang-github-spf13-cast (1.4.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Anthony Fok ]
+  * New upstream version 1.4.0
+  * Change Section from devel to golang
+  * Bump Standards-Version to 4.6.0 (no change)
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Mark library package with "Multi-Arch: foreign"
+
+ -- Anthony Fok <foka@debian.org>  Thu, 28 Oct 2021 23:59:32 -0600
+
+golang-github-spf13-cast (1.3.1-1) unstable; urgency=medium
+
+  * New upstream version 1.3.1
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Apply "cme fix dpkg" fixes:
+    - Update debhelper dependency to "Build-Depends: debhelper-compat (= 12)"
+    - Bump Standards-Version to 4.5.0 (no change)
+  * Add "Rules-Requires-Root: no" to debian/control
+
+ -- Anthony Fok <foka@debian.org>  Fri, 21 Feb 2020 03:57:24 -0700
+
+golang-github-spf13-cast (1.3.0-1) unstable; urgency=medium
+
+  * New upstream version 1.3.0
+  * Update Maintainer address in debian/control
+  * Bump Standards-Version to 4.2.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Thu, 20 Dec 2018 01:07:54 -0700
+
+golang-github-spf13-cast (1.2.0-2) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * Apply "cme fix dpkg" fixes: Rename license key from "MIT" to "Expat"
+  * Bump Standards-Version to 4.1.4 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 11 Apr 2018 04:24:55 -0600
+
+golang-github-spf13-cast (1.2.0-1) unstable; urgency=medium
+
+  [ Anthony Fok ]
+  * Team upload.
+  * Fix filenamemangle in debian/watch
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 1.2.0
+  * Use debhelper v11
+  * Use Priority: optional
+  * Update to Standards-Version 4.1.3
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 27 Feb 2018 22:54:52 +0100
+
+golang-github-spf13-cast (1.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add debian/watch because upstream has made release tarballs.
+  * Bump Standards-Version to 4.0.0:
+    Use https form of the copyright-format URL in debian/copyright.
+  * Add "Testsuite: autopkgtest-pkg-go" to debian/control.
+
+ -- Anthony Fok <foka@debian.org>  Sun, 09 Jul 2017 22:27:01 -0600
+
+golang-github-spf13-cast (0.0~git20161225.0.56a7ecb-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 0.0~git20161225.0.56a7ecb
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 29 Dec 2016 13:53:14 +0100
+
+golang-github-spf13-cast (0.0~git20160926.0.2580bc9-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 0.0~git20160926.0.2580bc9
+  * Use debhelper v10
+  * Remove dependency on golang-github-spf13-jwalterweatherman-dev
+  * Update d/copyright
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sun, 13 Nov 2016 17:20:22 +0100
+
+golang-github-spf13-cast (0.0~git20160730.0.e31f36f-1) unstable; urgency=medium
+
+  * New upstream version
+  * Change "golang-go" to "golang-any" in Build-Depends
+
+ -- Anthony Fok <foka@debian.org>  Sun, 28 Aug 2016 00:41:42 -0600
+
+golang-github-spf13-cast (0.0~git20160314.0.27b586b-1) unstable; urgency=medium
+
+  * New upstream version
+  * Update debian/control:
+    - Bump Standards-Version to 3.9.8 (no change)
+    - Clean up Build-Depends and Depends
+    - Use secure https URLs for Vcs-Git and Homepage
+
+ -- Anthony Fok <foka@debian.org>  Fri, 29 Apr 2016 04:44:51 +0800
+
+golang-github-spf13-cast (0.0~git20151218.0.ee7b3e0-1) unstable; urgency=medium
+
+  * New upstream snapshot
+  * Allow package to be installed with gccgo where golang-go is unavailable
+  * Update debian/copyright
+
+ -- Anthony Fok <foka@debian.org>  Fri, 15 Jan 2016 12:54:43 -0700
+
+golang-github-spf13-cast (0.0~git20150803.0.ee815aa-1) unstable; urgency=medium
+
+  * Initial release (Closes: #799735)
+
+ -- Anthony Fok <foka@debian.org>  Mon, 21 Sep 2015 16:37:12 -0600
