@@ -1,0 +1,18 @@
+Description: Taking up Iran TZ is failing with new TZ data, instead use
+ Asia/Tehran since Iran is just a symlink to this:
+ $ file /usr/share/zoneinfo/Iran
+ /usr/share/zoneinfo/Iran: symbolic link to Asia/Tehran
+Author: Nilesh Patra <nilesh@debian.org>
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052825
+Last-Update: 2023-10-24
+--- a/cast_test.go
++++ b/cast_test.go
+@@ -1053,7 +1053,7 @@
+ 	est, err := time.LoadLocation("EST")
+ 	c.Assert(err, qt.IsNil)
+ 
+-	irn, err := time.LoadLocation("Iran")
++	irn, err := time.LoadLocation("Asia/Tehran")
+ 	c.Assert(err, qt.IsNil)
+ 
+ 	swd, err := time.LoadLocation("Europe/Stockholm")

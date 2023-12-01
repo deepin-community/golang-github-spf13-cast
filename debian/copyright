@@ -1,13 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: cast
 Source: https://github.com/spf13/cast
+Upstream-Name: cast
 
 Files: *
-Copyright: 2014–2016 Steve Francia <steve.francia@gmail.com>
+Copyright: 2014 Steve Francia <steve.francia@gmail.com>
 License: Expat
 
 Files: debian/*
-Copyright: 2015–2016 Anthony Fok <foka@debian.org>
+Copyright: 2015 Anthony Fok <foka@debian.org>
 License: Expat
 Comment: Debian packaging is licensed under the same terms as upstream
 

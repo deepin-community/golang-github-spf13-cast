@@ -1,3 +1,39 @@
+golang-github-spf13-cast (1.5.1-2) unstable; urgency=medium
+
+  * Team Upload.
+  * Add patch to fix tests with TZ changes (Closes: #1052825)
+
+ -- Nilesh Patra <nilesh@debian.org>  Tue, 24 Oct 2023 18:43:31 +0530
+
+golang-github-spf13-cast (1.5.1-1) unstable; urgency=medium
+
+  * New upstream version 1.5.1
+  * Bump versioned dependencies as per go.mod
+  * Drop -dev package’s unneeded dependency on ${shlibs:Depends}
+
+ -- Anthony Fok <foka@debian.org>  Sun, 18 Jun 2023 00:41:18 -0600
+
+golang-github-spf13-cast (1.5.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix uscan watch file
+  * Remove test dependency from -dev package
+  * Update Standards-Version to 4.6.2 (no changes)
+  * Add tzdata to Build-Depends (Closes: #1027911)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 14 Jan 2023 18:06:03 +0800
+
+golang-github-spf13-cast (1.5.0-1) unstable; urgency=medium
+
+  * New upstream version 1.5.0
+  * Reorder fields in debian/control and debian/copyright
+  * Replace dependency on golang-github-stretchr-testify-dev
+    with golang-github-frankban-quicktest-dev (>= 1.14.3) as per go.mod
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Bump Standards-Version to 4.6.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Mon, 06 Jun 2022 01:55:57 -0600
+
 golang-github-spf13-cast (1.4.1-1) unstable; urgency=medium
 
   * New upstream version 1.4.1
